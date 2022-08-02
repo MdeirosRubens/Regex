@@ -1,6 +1,6 @@
 # REGEX
 
-***Projeto para captura de textos e/ou palavras chaves***
+***Projeto para captura de textos e/ou palavras chaves***, **Apenas Desktop**
 
 ***Stack*** Javascript, HTML, CSS e Bootstrap
 
