@@ -1,0 +1,61 @@
+.checkbox {
+    display: flex;
+    margin-top: 9rem;
+}
+
+.container-input input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    width: 50%;
+    position: relative;
+    font-size: 25px;
+}
+
+.checkmark {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.3em;
+    width: 1.3em;
+    background: black;
+    border-radius: 50px;
+    transition: all 0.7s;
+    --spread: 20px;
+}
+
+.container-input input:checked~.checkmark {
+    background: black;
+    box-shadow: -10px -10px var(--spread) 0px #5B51D8,
+                0 -10px var(--spread) 0px #833AB4, 10px -10px var(--spread) 0px #E1306C, 
+                10px 0 var(--spread) 0px #FD1D1D, 10px 10px var(--spread) 0px #F77737, 
+                0 10px var(--spread) 0px #FCAF45, -10px 10px var(--spread) 0px #FFDC80;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-input input:checked~.checkmark:after {
+    display: block;
+}
+
+.container-input .checkmark:after {
+    left: 0.50em;
+    top: 0.35em;
+    width: 0.25em;
+    height: 0.5em;
+    border: solid #f0f0f0;
+    border-width: 0 0.15em 0.15em 0;
+    transform: rotate(45deg);
+}

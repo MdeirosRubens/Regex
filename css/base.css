@@ -1,0 +1,30 @@
+body {
+    background-color: #212121;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.text-left {
+    font-weight: 800;
+    font-size: 5em;
+    margin-bottom: 9rem;
+
+    background-image: url('../img/background_dois.gif');
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+label {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.form-control {
+    height: 5rem;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-top: 5rem;
+}

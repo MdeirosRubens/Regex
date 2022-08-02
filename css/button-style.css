@@ -1,0 +1,89 @@
+.button-style {
+    margin: 3rem;
+}
+
+.button-style {
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    display: inline-block;
+    padding: 1.938rem 1.875rem;
+    outline: none;
+    border: 2px solid #FD1D1D;
+    margin: 40px;
+    width: 150px;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-decoration: none;
+    letter-spacing: 0.125em;
+    color: #fff;
+    -webkit-box-reflect: below 0px linear-gradient(transparent, #0002);
+    transition: 0.45s;
+    transition-delay: 0s;
+}
+
+.button-style:hover {
+    transition-delay: 1.5s;
+    color: #000;
+    box-shadow: 0 0 0.625rem #FD1D1D,
+        0 0 20px #833AB4,
+        0 0 40px #E1306C,
+        0 0 80px #F77737,
+        0 0 100px #FCAF45;
+}
+
+.button-style span {
+    position: relative;
+    z-index: 100;
+}
+
+.button-style::before {
+    content: "";
+    position: absolute;
+    left: -1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 0.125rem;
+    background: #FD1D1D;
+    box-shadow: 5px -8px 0 #833AB4,
+        5px 8px 0 #E1306C;
+    transition: width 0.5s,
+        left 0.5s,
+        height 0.5s,
+        box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.button-style:hover::before {
+    width: 60%;
+    height: 100%;
+    left: -0.125rem;
+    box-shadow: 5px 0 0 #F77737,
+        5px 0 0 #FCAF45;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
+
+.button-style::after {
+    content: "";
+    position: absolute;
+    right: -1.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1.25rem;
+    height: 0.125rem;
+    background: #FD1D1D;
+    box-shadow: -5px -8px 0 #833AB4,
+        -5px 8px 0 #E1306C;
+    transition: width 0.5s, right 0.5s, height 0.5s, box-shadow 0.5s;
+    transition-delay: 1s, 0.5s, 0s, 0s;
+}
+
+.button-style:hover::after {
+    width: 60%;
+    height: 102%;
+    right: -0.125rem;
+    box-shadow: -5px 0 0 #FD1D1D, -5px 0 0 #FD1D1D;
+    transition-delay: 0s, 0.5s, 1s, 1s;
+}
